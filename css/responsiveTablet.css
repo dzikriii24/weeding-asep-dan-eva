@@ -1,0 +1,74 @@
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  #desktop {
+    display: none;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  #left-bottom {
+    display: none;
+  }
+
+  #img-top {
+    height: 200px;
+    width: 200px;
+  }
+
+  #flowers-animates {
+    height: 40%;
+  }
+
+  #flowers-animates2,
+  #flowers-animates3 {
+    display: none;
+  }
+
+  #wedding-name {
+    margin-top: 30px;
+  }
+
+  #button-cek {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 40;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .boxy {
+    width: 90%;
+  }
+
+  .text-name {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .date-text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .ind-text {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  .top-fl {
+    width: 180px;
+    height: 180px;
+  }
+
+  .foto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+  

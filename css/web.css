@@ -1,0 +1,205 @@
+ /* Desktop */
+
+ .overflow-y {
+    overflow-y: auto;
+  }
+
+  @media (min-width: 1025px) {
+    #flowers-animates3 {
+      display: none;
+    }
+
+    #phone {
+      display: none;
+    }
+
+    #wedding-name {
+      margin-top: -120px;
+    }
+
+    #button-cek {
+      margin-top: 450px;
+      background: transparent;
+    }
+  }
+
+  /* Handphone */
+  /* Font */
+  .namefont {
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tangerine-regular {
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .charm-regular {
+    font-family: "Charm", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .charm-bold {
+    font-family: "Charm", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .weeding-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-medium {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-bold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .cormorant-garamond-light-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .cormorant-garamond-medium-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .cormorant-garamond-semibold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  @keyframes sway {
+    0% {
+      transform: rotate(0deg) translateX(0px) skewX(0deg);
+    }
+
+    25% {
+      transform: rotate(2deg) translateX(2px) skewX(1deg);
+    }
+
+    50% {
+      transform: rotate(0deg) translateX(0px) skewX(0deg);
+    }
+
+    75% {
+      transform: rotate(-2deg) translateX(-2px) skewX(-1deg);
+    }
+
+    100% {
+      transform: rotate(0deg) translateX(0px) skewX(0deg);
+    }
+  }
+
+  #flowers-animates2,
+  #flowers-animates3,
+  #flowers-animates,
+  #img-top {
+    animation: sway 5s infinite ease-in-out;
+  }
+
+  .spacing {
+    letter-spacing: 2px;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  #chatContainer {
+    max-height: 500px;
+    /* Batasi tinggi maksimal */
+    overflow-y: auto;
+    /* Aktifkan scrolling saat pesan bertambah */
+    display: flex;
+    flex-direction: column;
+  }
+  
