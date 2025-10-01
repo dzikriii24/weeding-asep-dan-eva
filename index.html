@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
   <title>1s Undangan Pernikahan Digital</title>
 
@@ -22,7 +23,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
@@ -53,9 +55,12 @@
     <source src="sound/mrydgh.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
-  <button id="musicBtn" onclick="toggleMusic()" class="p-2 bg-transparent rounded-full fixed bottom-5 right-5 z-10" disabled>
-    <svg id="musicIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-down-fill" viewBox="0 0 16 16">
-      <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0" />
+  <button id="musicBtn" onclick="toggleMusic()" class="p-2 bg-transparent rounded-full fixed bottom-5 right-5 z-10"
+    disabled>
+    <svg id="musicIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+      class="bi bi-volume-down-fill" viewBox="0 0 16 16">
+      <path
+        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0" />
     </svg>
   </button>
 
@@ -90,13 +95,12 @@
 
   <!-- Form Isi Nama -->
   <div id="isiNama" style="transition: opacity 0.5s ease-in-out;" class="first-page">
-    <section
-      id="bg-isiNama"
+    <section id="bg-isiNama"
       class="relative w-full h-screen bg-[url(images/background-first-page.svg)] bg-cover bg-left bg-no-repeat lg:bg-center overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent z-0 rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent z-0 rounded-2xl"
+        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
 
-      <div
-        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+      <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
           <h1 class="text-[40px] font-extrabold text-[#2a2414] cormorant-garamond-bold">
             Selamat Datang
@@ -106,17 +110,10 @@
             Silahkan Isi Nama Anda
           </p>
           <form action="" id="formName" method="post">
-            <label
-              for="username"
+            <label for="username"
               class="mt-10 relative block overflow-hidden border-b border-white bg-transparent pt-3 focus-within:border-white">
-              <input
-                type="text"
-                id="username"
-                name="username"
-                required
-                oninput="checkForm()"
+              <input type="text" id="username" name="username" required oninput="checkForm()"
                 placeholder="Nama Pengirim"
-
                 class="cormorant-garamond-regular peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-hidden sm:text-xl outline-none text-[#2a2414]" />
               <span
                 class="cormorant-garamond-regular absolute start-0 top-2 -translate-y-1/2 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs text-[#2a2414]">
@@ -126,15 +123,14 @@
             <div class="flex items-center justify-start gap-2 py-3">
               <button
                 class="button-buka bg-white btn items-center relative w-[190px] h-[50px] mt-5 cormorant-garamond-bold text-lg flex justify-center z-20"
-                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"
-                id="BukaUndangan"
-                type="submit"
-                onclick="document.getElementById('bgMusic').play()"
-                disabled>
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" id="BukaUndangan" type="submit"
+                onclick="document.getElementById('bgMusic').play()" disabled>
                 Buka Undangan
                 &MediumSpace;
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart-fill" viewBox="0 0 16 16">
-                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555l-4.2 2.568-.051-.105c-.666-1.3-2.363-1.917-3.699-1.25-1.336-.667-3.033-.05-3.699 1.25l-.05.105zM11.584 8.91l-.073.139L16 11.8V4.697l-4.003 2.447c.027.562-.107 1.163-.413 1.767Zm-4.135 3.05c-1.048-.693-1.84-1.39-2.398-2.082L.19 12.856A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144L10.95 9.878c-.559.692-1.35 1.389-2.398 2.081L8 12.324l-.551-.365ZM4.416 8.91c-.306-.603-.44-1.204-.413-1.766L0 4.697v7.104l4.49-2.752z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-heart-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555l-4.2 2.568-.051-.105c-.666-1.3-2.363-1.917-3.699-1.25-1.336-.667-3.033-.05-3.699 1.25l-.05.105zM11.584 8.91l-.073.139L16 11.8V4.697l-4.003 2.447c.027.562-.107 1.163-.413 1.767Zm-4.135 3.05c-1.048-.693-1.84-1.39-2.398-2.082L.19 12.856A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144L10.95 9.878c-.559.692-1.35 1.389-2.398 2.081L8 12.324l-.551-.365ZM4.416 8.91c-.306-.603-.44-1.204-.413-1.766L0 4.697v7.104l4.49-2.752z" />
                   <path d="M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
                 </svg>
               </button>
@@ -164,13 +160,15 @@
   <!-- Splash Screen -->
   <div class="splash-screen animate__animated overflow-hidden" id="splash-screen">
     <img src="images/white-flowers.svg" alt="SVG Icon"
-      class="absolute -top-20 -left-20 w-80 h-80 z-10 opacity-70 animate__animated animate__fadeInDown" id="img-top" style="rotate:90deg" />
+      class="absolute -top-20 -left-20 w-80 h-80 z-10 opacity-70 animate__animated animate__fadeInDown" id="img-top"
+      style="rotate:90deg" />
 
     <img src="images/white-flowers.svg" class="hidden lg:block absolute bottom-5 -left-20 w-80 h-80 z-20 opacity-50"
       id="flowers-animates" alt="" />
 
-    <img src="images/splash-bride&groom.svg" class="absolute bottom-5 -right-0 w-auto h-80 lg:h-[520px] z-20 animate__animated animate__slideInRight"
-      id="" alt="" />
+    <img src="images/splash-bride&groom.svg"
+      class="absolute bottom-5 -right-0 w-auto h-80 lg:h-[520px] z-20 animate__animated animate__slideInRight" id=""
+      alt="" />
 
 
     <img src="images/background.svg" alt="" class="absolute -top-10 z-0 animate__animated animate__fadeIn"
@@ -183,7 +181,8 @@
     <div class="relative -top-20 flex lg:items-center justify-center h-screen p-10 " id="wedding-name">
       <div class="name-splash indicator p-6" id="text">
         <div class="text-center z-0 text-[#2a2414]">
-          <h1 class="text-weding lg:text-[50px] font-extrabold tangerine-bold animate__animated animate__fadeInUp lg:mt-20 flex-col"
+          <h1
+            class="text-weding lg:text-[50px] font-extrabold tangerine-bold animate__animated animate__fadeInUp lg:mt-20 flex-col"
             id="fontsweding">
             Welcome To Our Wedding
           </h1>
@@ -195,9 +194,7 @@
             <span class="relative z-10 px-6 mt-8 animate__animated animate__fadeIn"></span>
           </span>
           <br />
-          <h1 class="namaUser text-[50px] animate__animated animate__fadeInUp mt-10 tangerine-bold"
-
-            id="fonts">
+          <h1 class="namaUser text-[50px] animate__animated animate__fadeInUp mt-10 tangerine-bold" id="fonts">
             <span id="display-name">
           </h1>
         </div>
@@ -219,7 +216,9 @@
     <div id="home">
 
       <!-- Background -->
-      <section class="bg-[url(images/bg-top-flowers-effect.svg)] w-full bg-cover bg-top bg-no-repeat h-[250px] z-10 relative shadow-lg" id="bg-pp">
+      <section
+        class="bg-[url(images/bg-top-flowers-effect.svg)] w-full bg-cover bg-top bg-no-repeat h-[250px] z-10 relative shadow-lg"
+        id="bg-pp">
         <svg class="waves1 top-40 opacity-70 shadow-lg shadow-[#e8e8e0]/70" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none"
           shape-rendering="auto">
@@ -238,30 +237,34 @@
 
       <!-- Foto Profile -->
       <img src="images/butterfly.svg" class="butterfly z-20" id="butterfly" alt="Kupu-Kupu" />
-      <div class="relative flex justify-end lg:justify-center items-center -mt-40 left-5 lg:left-0 lg:-mt-56 mx-auto w-full">
+      <div
+        class="relative flex justify-end lg:justify-center items-center -mt-40 left-5 lg:left-0 lg:-mt-56 mx-auto w-full">
 
-        <img alt="" src="images/animasi-home-couple.svg"
-          class="img-couple2 object-cover z-10 w-auto h-60 lg:h-80"
-          id="img-couple"
-          style="box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -7px;" />
+        <img alt="" src="images/animasi-home-couple.svg" class="img-couple2 object-cover z-10 w-auto h-60 lg:h-80"
+          id="img-couple" style="box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -7px;" />
       </div>
 
       <!-- PP End -->
       <!-- Text -->
 
       <div class="cont-text relative z-10 mt-[50px]">
-        <div class="boxy indicator absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 w-[80%] mx-auto h-[130%] my-auto rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
+        <div
+          class="boxy indicator absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 w-[80%] mx-auto h-[130%] my-auto rounded-2xl"
+          style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
           <span class="ind-text indicator-item indicator-bottom indicator-start">
-            <img src="images/splash-bride&groom.svg" alt="" class="hidden lg:block relative bottom-28 left-10 h-56 w-auto animate__animated animate__slideInLeft"
+            <img src="images/splash-bride&groom.svg" alt=""
+              class="hidden lg:block relative bottom-28 left-10 h-56 w-auto animate__animated animate__slideInLeft"
               id="">
           </span>
           <span class="ind-text indicator-item indicator-bottom indicator-end">
-            <img src="images/flowers-bottom-right.svg" alt="" class="hidden lg:block relative bottom-20 right-14 h-56 w-auto animate__animated animate__fadeIn"
+            <img src="images/flowers-bottom-right.svg" alt=""
+              class="hidden lg:block relative bottom-20 right-14 h-56 w-auto animate__animated animate__fadeIn"
               id="flowers-animates">
           </span>
         </div>
         <div class="text-center mt-5 text-[#2a2414]">
-          <h1 class="weeding-text spacing text-[50px] animate__animated animate__fadeInUp tangerine-bold" id="fontsweding">
+          <h1 class="weeding-text spacing text-[50px] animate__animated animate__fadeInUp tangerine-bold"
+            id="fontsweding">
             The Wedding of
           </h1>
         </div>
@@ -269,10 +272,10 @@
           <div class="indicator">
             <h1 class="text-name text-[60px] animate__animated animate__fadeInUp"
               style="font-family: 'Passions Conflict', cursive;" id="fonts">
-              - Arfan Alviandra
+              - Asep
               <span class="text-name text-5xl sm:text-5xl namefont mt-3" id="fonts">&nbsp
                 & &nbsp</span>
-              Zahira Aleesya -
+              Eva -
             </h1>
             </span>
           </div>
@@ -280,7 +283,7 @@
             <h1
               class="date-text text-center text-xl mt-10 text-[#2a2414] spacing text-2xl sm:text-xl cormorant-garamond-semibold animate__animated animate__fadeInUp"
               id="fontsweding">
-              ~ Minggu, 27 Januari 2025 ~
+              ~ Senin, 03 November 2025 ~
             </h1>
           </div>
         </div>
@@ -298,7 +301,9 @@
     <!-- Countdown DKK -->
     <div id="countdown-dkk" data-aos="zoom-in">
       <div class="mt-40 mb-56 relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0  w-[80%] mx-auto h-[130%] my-auto rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0  w-[80%] mx-auto h-[130%] my-auto rounded-2xl"
+          style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
         <span class="relative flex justify-center">
           <span
             class="relative z-10 px-6 mt-8 animate__animated animate__fadeIn tangerine-regular text-5xl text-center mt-10 text-[#2a2414]">Save
@@ -374,14 +379,17 @@
 
     <div class="container mx-auto rounded-2xl mt-20 px-6 py-8 relative flex flex-col items-center w-xs z-10"
       data-aos="fade-down">
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 mx-auto h-[110%] my-auto rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 mx-auto h-[110%] my-auto rounded-2xl"
+        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
       <div class="indicator w-full max-w-7xl relative">
         <div class="hero-content text-center">
           <div class="flex flex-col items-center">
             <div class="flex justify-center items-center bismillah">
               <img src="images/bismillah2.svg" alt="" class="w-60 opacity-80 mx-auto">
             </div>
-            <p class="arrum font-bold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414] mt-10 mx-auto mb-5">
+            <p
+              class="arrum font-bold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414] mt-10 mx-auto mb-5">
               " Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis)
               dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
               sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum
@@ -392,7 +400,8 @@
 
           </div>
         </div>
-        <span class="indicator-item indicator-top indicator-start absolute w-72 z-10 flow-arrum -top-60 -left-56" style="rotate:180deg">
+        <span class="indicator-item indicator-top indicator-start absolute w-72 z-10 flow-arrum -top-60 -left-56"
+          style="rotate:180deg">
           <img src="images/flowers-bottom-right.svg" alt="" id="flowers-animates">
         </span>
         <span class="indicator-item indicator-bottom indicator-end absolute w-72 bottom-20 right-14 z-10">
@@ -420,7 +429,9 @@
 
       <div
         class="indicator container mx-auto rounded-2xl mt-20 px-6 py-8 relative flex flex-col items-center w-xs z-10 flex-col justify-center items-center">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 mx-auto w-[100%] my-auto rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent z-0 mx-auto w-[100%] my-auto rounded-2xl"
+          style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"></div>
         <h1 class="bridge text-[70px] text-[#2a2414] z-10 text-center items-center flex justify-center"
           style="font-family: 'Passions Conflict', cursive;" data-aos="fade-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2a2414" class="bi bi-hearts"
@@ -439,88 +450,76 @@
         </h1>
 
         <div class="opening w-[80%] m-auto z-10">
-          <p class="salam font-extrabold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414] mt-8" data-aos="fade-left">
+          <p class="salam font-extrabold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414] mt-8"
+            data-aos="fade-left">
             Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
 
           <br>
 
-          <p class="salam font-extrabold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414]" data-aos="zoom-in">Maha suci
+          <p class="salam font-extrabold py-6 cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414]"
+            data-aos="zoom-in">Maha suci
             Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.</p>
-          <p class="salam font-extrabold cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414]" data-aos="zoom-in">Ya Allah,
+          <p class="salam font-extrabold cormorant-garamond-regular text-center text-xl w-lg text-[#2a2414]"
+            data-aos="zoom-in">Ya Allah,
             perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
         </div>
-        <h1
-          data-aos="fade-up" class="text-center mt-20 text-[#2a2414] spacing text-[45px] animate__animated animate__fadeInUp tangerine-bold"
+        <h1 data-aos="fade-up"
+          class="text-center mt-20 text-[#2a2414] spacing text-[45px] animate__animated animate__fadeInUp tangerine-bold"
           id="fontsweding">
           Kedua Mempelai
         </h1>
         <div class="foto grid grid-cols-1 lg:grid-cols-3">
-          <article class="cards1 relative w-72 overflow-hidden rounded-lg bg-gray-500 shadow-lg shadow-gray-500/90 mx-auto" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-            <img alt="" src="https://i.pinimg.com/736x/2f/82/48/2f824875daa60e09c6cbd2edbca0a377.jpg"
-              class="absolute inset-0 h-full w-full object-cover" />
+          <article
+            class="cards1 relative w-72 overflow-hidden rounded-lg bg-gray-500 shadow-lg shadow-gray-500/90 mx-auto"
+            data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img alt="" src="images/cowo.jpg" class="absolute inset-0 h-full w-full object-cover" />
 
             <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div class="p-4 sm:p-6">
-                <p class="block text-xs text-white/90"> Manager at Dana.id </p>
+
 
                 <a href="#">
-                  <h3 class="mt-3 text-4xl text-white text-center cormorant-garamond-bold-italic">Arfan Alviandra</h3>
+                  <h3 class="mt-3 text-4xl text-white text-center cormorant-garamond-bold-italic">Asep</h3>
                 </a>
 
                 <p class="mt-2 line-clamp-3 text-lg/relaxed text-white/95 text-center cormorant-garamond-regular">
-                  Putra Pertama Dari Bapak Alfath dan Ibu Sumarni
+                  Putra Ke-6 Dari Bapak Sarta & Ibu Ningsih (Almh)
                 </p>
-                <div class="text-l text-white/90 flex justify-start gap-2 mt-6 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                  </svg>
-                  <a href="https://www.instagram.com/_1s.id/" target="_blank" rel="noopener noreferrer"><p class=""> arfan.alv</p></a>
-                </div>
 
               </div>
             </div>
           </article>
-          <div class="cards1 relative flex justify-center items-center text-[100px] font-extrabold namefont" data-aos="zoom-in">
+          <div class="cards1 relative flex justify-center items-center text-[100px] font-extrabold namefont"
+            data-aos="zoom-in">
             &
           </div>
-          <article class="cards1 relative w-72 overflow-hidden rounded-lg bg-gray-500 shadow-lg shadow-gray-500/90 mx-auto" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-            <img alt="" src="https://i.pinimg.com/736x/18/c2/96/18c29680423dc8ec13e290b7bd9917a5.jpg"
-              class="absolute inset-0 h-full w-full object-cover" />
+          <article
+            class="cards1 relative w-72 overflow-hidden rounded-lg bg-gray-500 shadow-lg shadow-gray-500/90 mx-auto"
+            data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img alt="" src="images/cewe.jpg" class="absolute inset-0 h-full w-full object-cover" />
 
             <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div class="p-4 sm:p-6">
-                <p class="block text-xs text-white/90"> UI UX Designer at Dana.id </p>
+
 
                 <a href="#">
-                  <h3 class="mt-3 text-4xl text-white text-center cormorant-garamond-bold-italic">Zahira Aleesya</h3>
+                  <h3 class="mt-3 text-4xl text-white text-center cormorant-garamond-bold-italic">Eva</h3>
                 </a>
 
                 <p class="mt-2 line-clamp-3 text-lg/relaxed text-white text-center cormorant-garamond-regular">
-                  Putri Kedua Dari Bapak Ntis dan Ibu Resti
+                  Putri Ke-2 Dari Bapak Mahadi & Ibu Turiyah
                 </p>
-                <div class="text-l text-white/90 flex justify-start gap-2 mt-6 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                  </svg>
-                  <a href="https://www.instagram.com/_1s.id/" target="_blank" rel="noopener noreferrer"><p class="">z.aleesya</p></a>
-                </div>
 
               </div>
             </div>
           </article>
         </div>
-        <span class="indicator-item indicator-bottom indicator-end w-52 right-20 h-auto lg:w-72 bottom-20 lg:right-24 z-10">
+        <span
+          class="indicator-item indicator-bottom indicator-end w-52 right-20 h-auto lg:w-72 bottom-20 lg:right-24 z-10">
           <img src="images/flowers-in-photo.svg" alt="" id="flowers-animates">
         </span>
-        <span class="indicator-item indicator-top indicator-start w-52 h-auto lg:w-72 z-10 lg:-top-52 -top-40 -left-40" style="rotate:180deg">
+        <span class="indicator-item indicator-top indicator-start w-52 h-auto lg:w-72 z-10 lg:-top-52 -top-40 -left-40"
+          style="rotate:180deg">
           <img src="images/flowers-in-photo.svg" alt="" id="flowers-animates">
         </span>
       </div>
@@ -528,149 +527,16 @@
     </div>
     <!-- Profile End -->
 
-    <!-- Our Love Story -->
-    <img src="images/butterfly.svg" class="butterfly z-20" id="butterfly3" alt="Kupu-Kupu" />
-    <div
-      class="mt-40 indicator container mx-auto rounded-2xl mt-20 px-6 py-8 relative flex flex-col items-center w-xs z-10 flex-col justify-center items-center">
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-transparent z-0 rounded-2xl mx-auto w-[100%] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
-      </div>
-      <h1 class="lovestory text-[70px] text-[#2a2414] z-10 relative flex justify-center mt-10 mb-20 items-center"
-        data-aos="zoom-in"
-        style="font-family: 'Passions Conflict', cursive;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2a2414" class="bi bi-flower3"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
-        </svg>
-        &MediumSpace;
-        Our Love Story
-        &MediumSpace;
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2a2414" class="bi bi-flower3"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
-        </svg>
-      </h1>
-      <article
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        class="cardstory flex justify-center relative bg-white transition z-10 mx-auto rounded-l-2xl" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-        <div class="time-story p-2 [writing-mode:_vertical-lr]">
-          <time datetime="2025-04-10"
-            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-            <span>2020</span>
-            <span class="w-px flex-1 bg-gray-900/10"></span>
-            <span>10 Januari</span>
-          </time>
-        </div>
-
-
-        <div class="story-text flex flex-1 flex-col justify-between">
-          <div class="story-text border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-            <a href="#">
-              <h3 class="font-bold uppercase text-gray-900 cormorant-garamond-bold">
-                Our First Meet at Singapore
-              </h3>
-            </a>
-
-            <p class="story mt-2 line-clamp-3 text-sm/relaxed text-gray-700 cormorant-garamond-regular">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati quidem minus architecto. Hic
-              blanditiis tempora fugiat quasi! Vero laboriosam vitae atque voluptatem repellat maiores odio mollitia
-              quis cum ipsam.
-            </p>
-          </div>
-
-        </div>
-      </article>
-
-      <article
-        data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        class="cardstory flex justify-center relative bg-white transition z-10 mx-auto mt-14 rounded-r-2xl" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-
-
-        <div class="story-text flex flex-1 flex-col justify-between">
-          <div class="story-text border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-            <a href="#">
-              <h3 class="font-bold uppercase text-gray-900 cormorant-garamond-bold">
-                Engagement at New York
-              </h3>
-            </a>
-
-            <p class="story mt-2 line-clamp-3 text-sm/relaxed text-gray-700 cormorant-garamond-regular">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, hic. Nemo et ex iure assumenda
-              blanditiis, nesciunt, eaque animi cupiditate doloremque dicta ullam, nobis deserunt aspernatur. Sint
-              deleniti beatae eligendi?
-            </p>
-          </div>
-        </div>
-        <div class="time-story p-2 [writing-mode:_vertical-lr]">
-          <time datetime="2025-04-10"
-            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-            <span>2022</span>
-            <span class="w-px flex-1 bg-gray-900/10"></span>
-            <span>11 Desember</span>
-          </time>
-        </div>
-      </article>
-      <article
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        class="cardstory flex justify-center relative bg-white transition z-10 mx-auto mt-14 rounded-l-2xl mb-20" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-        <div class="time-story p-2 [writing-mode:_vertical-lr]">
-          <time datetime="2025-04-10"
-            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-            <span>2022</span>
-            <span class="w-px flex-1 bg-gray-900/10"></span>
-            <span>11 Desember</span>
-          </time>
-        </div>
-
-        <div class="story-text flex flex-1 flex-col justify-between">
-          <div class="story-text border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-            <a href="#">
-              <h3 class="font-bold uppercase text-gray-900 cormorant-garamond-bold">
-                Married at Tokyo
-              </h3>
-            </a>
-
-            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700 cormorant-garamond-regular">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, hic. Nemo et ex iure assumenda
-              blanditiis, nesciunt, eaque animi cupiditate doloremque dicta ullam, nobis deserunt aspernatur. Sint
-              deleniti beatae eligendi?
-            </p>
-          </div>
-
-        </div>
-      </article>
-
-      <span class="indicator-item indicator-top indicator-start absolute w-72 z-10 flow-arrum -top-40  -left-56" style="rotate:180deg">
-        <img src="images/flowers-bottom-right.svg" alt="" id="flowers-animates">
-      </span>
-    </div>
-
-
-    <!-- Our Love Story End -->
-
 
     <!-- Weeding Event -->
 
     <div class="relative">
-      <h1
-        data-aos="fade-up"
-        class="lovestory text-[70px] text-[#2a2414] z-10 relative text-start mx-20 mt-20"
+      <h1 data-aos="fade-up" class="lovestory text-[70px] text-[#2a2414] z-10 relative text-start mx-20 mt-20"
         style="font-family: 'Passions Conflict', cursive;">Weeding Event</h1>
       <div
         class="efek-putih absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-transparent z-0 rounded-2xl mx-auto w-[84%]">
       </div>
-      <section
-        data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+      <section data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
         class="card-event overflow-hidden sm:grid sm:grid-cols-2 sm:items-center mt-12 w-[84%] mx-auto h-[580px] relative rounded-2xl"
         style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
         <div class="p-8 md:p-12 lg:px-16 lg:py-24 sm:self-start">
@@ -681,15 +547,15 @@
 
             <div class="text-time-event flex justify-start items-center gap-8">
               <div class="text-[80px] font-bold">
-                <h4>30</h4>
+                <h4>03</h4>
               </div>
               <div class="times-events font-bold" style=" display: flex;
                 flex-direction: column;
                 align-items: start;
                 line-height: 1; /* Mengurangi jarak antar baris */
                 gap: 6px; /* Jarak default */">
-                <h5>Minggu</h5>
-                <h5>Juli</h5>
+                <h5>Senin</h5>
+                <h5>November</h5>
                 <h5>2025</h5>
               </div>
             </div>
@@ -702,30 +568,32 @@
                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
               </svg>
-              <h1>09.00 WIB</h1>
+              <h1>09.00 WIB s/d 10.00 WIB</h1>
             </div>
             <div class="locations">
               <h1 class="text-2xl cormorant-garamond-bold mt-10">
                 Lokasi Acara
               </h1>
               <h3 class="text-xl cormorant-garamond-regular mt-3" id="alamat-akad">
-                Jalan Mawar No.29, Depok Utara, Jawa Barat.
+                Kp. Ciaraginggang RT 017 / RW 005 Desa kedungsoka kec. Pulo Ampel kab. Serang
               </h3>
             </div>
           </div>
           <div class="button-hp flex flex-col -mt-8 p-0 lg:flex-row lg:gap-4">
-            <a href="https://www.google.com/maps/place/Monas,+Gambir,+Kecamatan+Gambir,+Kota+Jakarta+Pusat,+Daerah+Khusus+Ibukota+Jakarta/@-6.1754083,106.824584,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5d2db8c5617:0x4e446b7ac891d847!8m2!3d-6.1753917!4d106.8271533!16s%2Fg%2F11bw3wnng2?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-              <button class="bg-white btn items-center relative w-[170px] h-[40px] mt-12 cormorant-garamond-bold text-lg"
-              style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
-              Google Maps
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
-                viewBox="0 0 16 16">
-                <path
-                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-              </svg>
-            </button></a>
-            <button class="bg-white btn items-center relative w-[170px] lg:mt-12 mt-5 h-[40px] cormorant-garamond-bold text-lg"
+            <a href="https://maps.app.goo.gl/hvZcfUDgfsY24wtU7" target="_blank" rel="noopener noreferrer">
+              <button
+                class="bg-white btn items-center relative w-[170px] h-[40px] mt-12 cormorant-garamond-bold text-lg"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                Google Maps
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </button></a>
+            <button
+              class="bg-white btn items-center relative w-[170px] lg:mt-12 mt-5 h-[40px] cormorant-garamond-bold text-lg"
               onclick="copyText('alamat-akad')" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
               Salin Alamat
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy"
@@ -742,10 +610,7 @@
       </section>
     </div>
 
-    <div class="relative mt-20"
-      data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
+    <div class="relative mt-20" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
       <div
         class="efek-putih absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-transparent z-0 rounded-2xl mx-auto w-[84%]">
@@ -763,15 +628,15 @@
 
             <div class="text-time-event flex justify-start items-center gap-8">
               <div class="text-[80px] font-bold">
-                <h4>21</h4>
+                <h4>03</h4>
               </div>
               <div class="times-events font-bold" style=" display: flex;
                 flex-direction: column;
                 align-items: start;
                 line-height: 1; /* Mengurangi jarak antar baris */
                 gap: 6px; /* Jarak default */">
-                <h5>Minggu</h5>
-                <h5>Agustus</h5>
+                <h5>Senin</h5>
+                <h5>November</h5>
                 <h5>2025</h5>
               </div>
             </div>
@@ -784,30 +649,32 @@
                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
               </svg>
-              <h1>09.00 WIB</h1>
+              <h1>10.00 WIB s/d 20.00 WIB</h1>
             </div>
             <div class="locations">
               <h1 class="text-2xl cormorant-garamond-bold mt-10">
                 Lokasi Acara
               </h1>
               <h3 class="text-xl cormorant-garamond-regular mt-3" id="alamat-resepsi">
-                JL. Kembang asih No.24, Depok utara, Jawa Barat.
+                Kp. Ciaraginggang RT 017 / RW 005 Desa kedungsoka kec. Pulo Ampel kab. Serang
               </h3>
             </div>
           </div>
           <div class="button-hp flex flex-col -mt-8 p-0 lg:flex-row lg:gap-4">
-            <a href="https://www.google.com/maps/place/Monas,+Gambir,+Kecamatan+Gambir,+Kota+Jakarta+Pusat,+Daerah+Khusus+Ibukota+Jakarta/@-6.1754083,106.824584,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5d2db8c5617:0x4e446b7ac891d847!8m2!3d-6.1753917!4d106.8271533!16s%2Fg%2F11bw3wnng2?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-              <button class="bg-white btn items-center relative w-[170px] h-[40px] mt-12 cormorant-garamond-bold text-lg"
-              style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
-              Google Maps
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
-                viewBox="0 0 16 16">
-                <path
-                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-              </svg>
-            </button></a>
-            <button class="bg-white btn items-center relative w-[170px] h-[40px] lg:mt-12 mt-5 cormorant-garamond-bold text-lg"
+            <a href="https://maps.app.goo.gl/hvZcfUDgfsY24wtU7" target="_blank" rel="noopener noreferrer">
+              <button
+                class="bg-white btn items-center relative w-[170px] h-[40px] mt-12 cormorant-garamond-bold text-lg"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                Google Maps
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </button></a>
+            <button
+              class="bg-white btn items-center relative w-[170px] h-[40px] lg:mt-12 mt-5 cormorant-garamond-bold text-lg"
               onclick="copyText('alamat-resepsi')" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
               Salin Alamat
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy"
@@ -823,21 +690,13 @@
     </div>
 
 
-    <div id="copyAlert"
-      class="fixed bottom-3 right-3 hidden z-50 cormorant-garamond-regular text-lg">
+    <div id="copyAlert" class="fixed bottom-3 right-3 hidden z-50 cormorant-garamond-regular text-lg">
       <div role="alert" class="rounded-xl border border-gray-100 bg-white p-4 animate__animated animate__fadeInRight">
         <div class="flex items-start gap-4">
           <span class="text-green-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
                 d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </span>
@@ -849,13 +708,8 @@
           <button class="text-gray-500 transition hover:text-gray-600">
             <span class="sr-only">Dismiss popup</span>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -878,8 +732,8 @@
                 <h1 class="giftss text-[50px] text-[#2a2414] z-10 relative flex justify-center mt-0"
                   style="font-family: 'Passions Conflict', cursive;" data-aos="zoom-in">- Virtual Wedding Gift -</h1>
 
-                <p
-                  class="capss font-bold py-2 cormorant-garamond-regular text-center text-lg w-lg text-[#2a2414] mt-5" data-aos="zoom-in">
+                <p class="capss font-bold py-2 cormorant-garamond-regular text-center text-lg w-lg text-[#2a2414] mt-5"
+                  data-aos="zoom-in">
                   Kepada keluarga, sahabat, dan orang-orang terkasih, kehadiran dan doa restu Anda adalah hadiah terbaik
                   bagi
                   kami. Namun, jika berkenan untuk memberikan tanda kasih, kami dengan senang hati menerimanya melalui
@@ -890,8 +744,7 @@
                 <div class="button-hp mt-4">
                   <div class="flex justify-center items-center relative">
                     <!-- You can open the modal using ID.showModal() method -->
-                    <button
-                      data-aos="zoom-in"
+                    <button data-aos="zoom-in"
                       class="bg-white btn items-center relative w-[150px] h-[50px] mt-5 cormorant-garamond-bold text-lg flex justify-center"
                       onclick="my_modal_4.showModal()" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
                       Virtual Gift
@@ -920,8 +773,8 @@
                                   Virtual Account Dana
                                 </h3>
 
-                                <p class="mt-2 text-xl cormorant-garamond-bold font-bold text-[#2a2414]">A/N Daniel
-                                  Kamaleng</p>
+                                <p class="mt-2 text-xl cormorant-garamond-bold font-bold text-[#2a2414]">
+                                  A/N Eva Da****i</p>
                               </div>
 
                               <div class="sm:block sm:shrink-0">
@@ -938,7 +791,7 @@
                             </div>
                             <div class="flex justify-start items-center gap-4">
                               <p class="text-xl text-[#2a2414]  text-start mt-3" id="dana">
-                                0895-1234-0898
+                                082124634688
                               </p>
                               <button class="svgs" onclick="copyText('dana')"
                                 style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
@@ -954,7 +807,58 @@
                             <div
                               class="mt-10 flex flex-col cormorant-garamond-regular text-start text-lg text-[#2a2414]  text-start">
                               <p>Hari dan Tanggal Pernikahan</p>
-                              <p>Minggu, 15 Juli 2025</p>
+                              <p>Senin, 03 November 2025</p>
+                            </div>
+                          </a>
+
+                          <a class="bg-white relative block overflow-hidden rounded-lg p-4 sm:p-6 lg:p-8"
+                            style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <span
+                              class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-yellow-700 via-amber-800 to-yellow-900">
+                            </span>
+
+
+                            <div class="sm:flex sm:justify-between sm:gap-4">
+                              <div>
+                                <h3 class="capss text-2xl font-extrabold cormorant-garamond-bold text-[#2a2414]">
+                                  Bank BRI
+                                </h3>
+
+                                <p class="mt-2 text-xl cormorant-garamond-bold font-bold text-[#2a2414]">
+                                  A/N Eva Dayanti</p>
+                              </div>
+
+                              <div class="sm:block sm:shrink-0">
+                                <img alt=""
+                                  src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Logo_Bank_Rakyat_Indonesia.svg"
+                                  class="logs size-16 rounded-lg object-cover shadow-xs" />
+                              </div>
+                            </div>
+
+                            <div class="mt-4">
+                              <p class="text-lg text-[#2a2414] text-start cormorant-garamond-bold">
+                                Nomer Rekening
+                              </p>
+                            </div>
+                            <div class="flex justify-start items-center gap-4">
+                              <p class="text-xl text-[#2a2414]  text-start mt-3" id="bri">
+                                737101018614538
+                              </p>
+                              <button class="svgs" onclick="copyText('bri')"
+                                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                  class="bi bi-copy" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                                </svg>
+                              </button>
+                            </div>
+
+
+                            <div
+                              class="mt-10 flex flex-col cormorant-garamond-regular text-start text-lg text-[#2a2414]  text-start">
+                              <p>Hari dan Tanggal Pernikahan</p>
+                              <p>Senin, 03 November 2025</p>
                             </div>
                           </a>
                         </div>
@@ -978,82 +882,61 @@
 
     <!-- Weeding Gift End -->
     <!-- Pesan -->
+    <!-- Pesan -->
     <div class="pesans mt-14">
       <section class="relative w-[92%] mx-auto rounded-2xl" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-transparent z-0 rounded-2xl"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-transparent z-0 rounded-2xl">
+        </div>
         <div class="relative z-10 mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div class="p-8 md:p-12 lg:px-16 lg:py-24">
               <div class="mx-auto max-w-xl text-center">
                 <h1 class="lovestory text-[45px] text-[#2a2414] z-10 relative flex justify-center -mt-10"
-                  data-aos="zoom-in"
-                  style="font-family: 'Passions Conflict', cursive;">Sampaikan Ucapan Doa & Restu</h1>
+                  data-aos="zoom-in" style="font-family: 'Passions Conflict', cursive;">Sampaikan Ucapan Doa & Restu
+                </h1>
                 <h2 class="text-lg cormorant-garamond-regular text-black md:text-lg mt-5" data-aos="fade-right">
-                  Kami akan sangat bahagia jika Bapak/Ibu/Saudara/i berkenan meninggalkan pesan, doa, atau harapan terbaik untuk kami. Setiap kata yang dikirimkan akan menjadi kenangan indah bagi perjalanan baru kami.
+                  Kami akan sangat bahagia jika Bapak/Ibu/Saudara/i berkenan meninggalkan pesan, doa, atau harapan
+                  terbaik untuk kami. Setiap kata yang dikirimkan akan menjadi kenangan indah bagi perjalanan baru kami.
                 </h2>
                 <form id="chatForm" class="text-start relative z-10">
                   <div>
                     <div class="overflow-hidden mt-10">
-                      <label
-                        for="senderName"
+                      <label for="senderName"
                         class="mt-10 relative block overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-gray-200">
-                        <input
-                          type="text"
-                          id="senderName"
-                          name="senderName"
-                          required
-                          placeholder="Nama Pengirim"
+                        <input type="text" id="senderName" name="senderName" required placeholder="Nama Pengirim"
                           class="cormorant-garamond-regular peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-hidden sm:text-xl outline-none" />
                         <span
                           class="cormorant-garamond-regular absolute start-0 top-2 -translate-y-1/2 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs">
                           Isi Nama Pengirim
                         </span>
                       </label>
-                      <textarea
-                        id="message"
-                        name="message"
+                      <textarea id="message" name="message"
                         class="w-full resize-none border-x-0 border-t-0 border-b-2 border-gray-200 px-0 align-top outline-none bg-transparent cormorant-garamond-regular text-lg mt-3"
-                        rows="4"
-                        required
-                        placeholder="Kirimkan Pesan, Doa atau Ucapan"></textarea>
+                        rows="4" required placeholder="Kirimkan Pesan, Doa atau Ucapan"></textarea>
 
                       <div class="button-hp flex-col items-center justify-end gap-2 py-3">
                         <button
                           class="bg-white btn items-center relative w-[170px] h-[50px] mt-5 cormorant-garamond-bold text-lg flex justify-center"
-                          style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"
-                          type="submit"
-                          disabled>
+                          style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;" type="submit">
                           Kirim Pesan
                           &MediumSpace;
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-send" viewBox="0 0 16 16">
+                            <path
+                              d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
                           </svg>
                         </button>
-                        <h2 class="text-sm cormorant-garamond-regular text-black md:text-sm mt-5">
-                        Tombol DiNon-aktifkan (Hanya Demo)
-                        </h2>
                       </div>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div id="chatContainer" class="relative flex flex-col gap-4 p-4 bg-white rounded-xl" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
-              <div class="flex items-start gap-2.5 p-4 bg-white border rounded-lg shadow">
-
-                <div class="w-full max-w-[320px]">
-                  <div class="flex items-center space-x-2">
-                    <span class="text-lg font-semibold text-gray-900 cormorant-garamond-bold-italic">Danielalonso</span>
-                    <span class="text-sm text-gray-500">19:00</span>
-                  </div>
-                  <p class="text-[15px] py-2 text-gray-900 cormorant-garamond-regular">Hari ini adalah awal dari kisah indah kalian berdua. Semoga kebersamaan ini selalu dipenuhi dengan cinta, kebahagiaan, dan keberkahan. Selamat menempuh hidup baru! ❤️🎊</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
     </div>
+    <!-- Pesan End -->
     <!-- Pesan End -->
 
     <!-- Footer -->
@@ -1075,19 +958,21 @@
           <h1 class="text-3xl font-extrabold text-white sm:text-5xl tangerine-bold" data-aos="zoom-in">
             Terima Kasih
           </h1>
-          <p class="font12px mt-0 max-w-lg text-white text-xl font-semibold mt-10 cormorant-garamond-regular" data-aos="zoom-in">
-            Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada kami.
+          <p class="font12px mt-0 max-w-lg text-white text-xl font-semibold mt-10 cormorant-garamond-regular"
+            data-aos="zoom-in">
+            Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan
+            memberikan do’a restu kepada kami.
           </p>
 
           <p class="font12px mt-0 max-w-lg text-white text-xl font-semibold mt-24 cormorant-garamond-regular">
             Kami yang Berbahagia
           </p>
-          <h1 class="text-name text-[48px] text-white pt-10"
-            style="font-family: 'Passions Conflict', cursive;" id="fonts">
-            - Arfan Alviandra
+          <h1 class="text-name text-[68px] text-white pt-10" style="font-family: 'Passions Conflict', cursive;"
+            id="fonts">
+            - Asep
             <span class="text-name text-5xl sm:text-5xl namefont mt-3" id="fonts">&nbsp
               & &nbsp</span>
-            Zahira Aleesya -
+            Eva -
           </h1>
         </div>
       </section>
@@ -1102,7 +987,7 @@
         <div class="sm:flex sm:items-center sm:justify-center">
 
           <p class="font12px mt-4 text-center text-sm text-[#2a2414] lg:mt-0 lg:text-center cormorant-garamond-regular">
-            Copyright &copy; 2025. All rights reserved | Designed by zk
+            Copyright &copy; 2025. All rights reserved | Designed by 1slabs.id
           </p>
         </div>
       </div>
@@ -1123,7 +1008,7 @@
 
 
   <script>
-    document.getElementById("formName").addEventListener("submit", function(event) {
+    document.getElementById("formName").addEventListener("submit", function (event) {
       event.preventDefault(); // Mencegah halaman refresh saat submit
       showSplashScreen();
     });
@@ -1162,10 +1047,30 @@
 
 
 
+    // WA
 
 
 
-    const countdownDate = new Date("2025-02-20T12:00:00").getTime();
+    document.getElementById("chatForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var pengantin = "Asep & Eva";
+      var pesan = document.getElementById("message").value;
+      var pengirim = document.getElementById("senderName").value;
+
+      var nomorTujuan = "6282124634688"; // Ganti dengan nomor WA tujuan
+      var teks =
+        `Assalamu’alaikum warahmatullahi wabarakatuh,\n\nKepada Yth. Saudara/i ${pengantin}, selamat menempuh hidup baru. Semoga menjadi keluarga yang sakinah, mawaddah, warahmah serta selalu diberkahi oleh Allah SWT.\n\n${pesan}\n\nHormat saya,\n${pengirim}`;
+      var url = `https://wa.me/${nomorTujuan}?text=${encodeURIComponent(teks)}`;
+
+      window.open(url, "_blank");
+    });
+
+    // WA END
+
+
+
+    const countdownDate = new Date("2025-11-03T09:00:00").getTime();
 
 
     function updateCountdown() {
@@ -1231,10 +1136,12 @@
     function toggleMusic() {
       if (audio.paused) {
         audio.play();
-        icon.innerHTML = `<path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zm3.025 4a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"/>`; // Volume On
+        icon.innerHTML =
+          `<path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zm3.025 4a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"/>`; // Volume On
       } else {
         audio.pause();
-        icon.innerHTML = `<path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>`; // Volume Off
+        icon.innerHTML =
+          `<path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>`; // Volume Off
       }
     }
 
@@ -1271,16 +1178,17 @@
     // Jalankan animasi untuk setiap kupu-kupu
     document.querySelectorAll(".butterfly").forEach(animateButterfly);
 
-c
+    c
     document.addEventListener('gesturestart', function (event) {
-    event.preventDefault();
-});
-document.addEventListener('wheel', function (event) {
-    if (event.ctrlKey) {
+      event.preventDefault();
+    });
+    document.addEventListener('wheel', function (event) {
+      if (event.ctrlKey) {
         event.preventDefault();
-    }
-}, { passive: false });
-
+      }
+    }, {
+      passive: false
+    });
   </script>
   <script>
     AOS.init();
